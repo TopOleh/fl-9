@@ -1,0 +1,155 @@
+/*1) PRINT PAGE GENERATING*/
+@media print {
+    .tm-sidebar, #about, section:nth-of-type(1n + 2) {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin: 0;
+
+    }
+
+    #home {
+        margin-bottom: 0
+    }
+
+    .tm-banner {
+        height: 7cm;
+    }
+
+    .flex-2-col {
+        display: block;
+        margin-top: 0;
+    }
+
+    .flex-2-col *{
+        padding: 0 0 0 7mm;
+    }
+
+    h2.tm-section-title {
+        color: #00f;
+    }
+
+    .tm-section-description {
+        width: 15cm;
+    }
+
+    div[class|="flex-item"] {
+        padding: 0;
+        text-align: center;
+    }
+}
+/*SCREEN STYLES*/
+@media screen {
+
+    /*1)Gallery styles*/
+    .tm-box-bg-title:hover {
+        background-color: #2bb9e0;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    a>img[class*="thumbnail"] {
+      border-radius: 50%;
+    }
+
+    /*
+        2) Changed p 1st letter color and font size
+        7) Added padding for space before first letter
+    */
+
+    p:not(.tm-banner-text):first-letter {
+        padding-left: 20px;
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    /*3) Added Shadows */
+    .tm-sidebar, .tm-content-box:not(:empty) {
+        box-shadow: 0 1px 4px 4px rgba(0,0,0,0.3);
+    }
+
+    /*4) Added Triangles to sections corner*/
+    section:not(:empty)::before,#home:before {
+        position: absolute;
+        content: "";
+        border-top: 35px solid #4eadbc;
+        border-right: 140px solid transparent;
+    }
+
+    /*5) Changed Style "How do we do it"*/
+    div[class^="carousel"] h2.tm-section-title:first-of-type {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    /*6) First p after h2 styles*/
+    h2 + p:first-of-type {
+        font-style: italic;
+    }
+
+    /*7)Added vertical space*/
+    p {
+        line-height: 27px;
+    }
+
+    /*8)Added styles for heading links*/
+    .heading .text:after {
+        content: "NEW";
+        color: red;
+        font-size: 8pt;
+        vertical-align: super;
+    }
+
+    .heading ol>li>a:visited {
+        color: silver;
+    }
+
+    .heading ol>li>a:hover{
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        color: #1f7e9a;
+    }
+
+    /*
+        9)Changed gallery
+    */
+    ul.gallery-container li:nth-child(odd) {
+        background-color: whitesmoke;
+
+    }
+    ul.gallery-container li.box p{
+        font-size: 19pt;
+    }
+    ul.gallery-container p:first-letter{
+        padding: 0;
+        color: black;
+        font-size: 28pt;
+    }
+
+    ul.gallery-container li.box  h2{
+        font-size: 35pt;
+    }
+
+    /*10) Added dotes for sidebar*/
+    .tm-sidebar li.tm-nav-item:not(:last-of-type){
+        border-bottom: silver dotted;
+    }
+
+    /*11) Added styles for input */
+    input[type="text"], button[type="submit"]{
+        color: red;
+    }
+
+    .mandatory-field:after {
+        content:"*";
+        color: #e32;
+        font-weight:bold ;
+    }
+
+    button[type="submit"]:hover {
+        color: white;
+        background-color: #1f7e9a;
+        border-color: transparent;
+    }
+}
