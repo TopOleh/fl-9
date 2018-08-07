@@ -37,7 +37,7 @@ body {
           color: white;
           background-color: #1fbcd3;
           box-shadow: 2px 2px 12px 8px #42cfe3;
-          border: #1fbcd3; }
+          border: #20c4dc; }
   .main-wrapper .toolbar {
     margin: 30px 60px 10px 800px; }
     .main-wrapper .toolbar input {
@@ -72,6 +72,9 @@ body {
       background-color: #efefef;
       padding: 10px;
       margin: 10px 6px; }
+      .main-wrapper .post-list article:hover {
+        box-shadow: 1px 1px 4px 4px #2cc9e0;
+        transition: 1s; }
       .main-wrapper .post-list article img {
         width: 495px; }
       .main-wrapper .post-list article .post-description {
@@ -160,7 +163,7 @@ body {
       color: white;
       background-color: #1fbcd3;
       box-shadow: 2px 2px 12px 8px #42cfe3;
-      border: #1fbcd3; }
+      border: #20c4dc; }
   .main-wrapper #contact .form textarea {
     border: 2px solid #c1bfc6;
     background-color: white;

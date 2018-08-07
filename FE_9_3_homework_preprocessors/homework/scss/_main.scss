@@ -44,7 +44,7 @@
     color: white;
     background-color: $color-general;
     box-shadow: 2px 2px 12px 8px lighten($color-general, 10%);
-    border: $color-general;
+    border: lighten($color-general, 2%);
   }
 
   &:active {
@@ -128,6 +128,11 @@ body {
         background-color: $background-color-article;
         padding: 10px;
         margin: 10px 6px;
+
+        &:hover {
+          box-shadow: 1px 1px 4px 4px lighten($color-general, 5%);
+          transition: 1s;
+        }
 
         img {
           width: 495px;

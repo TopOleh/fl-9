@@ -37,7 +37,7 @@ body {
           color: white;
           background-color: red;
           box-shadow: 2px 2px 12px 8px #ff3333;
-          border: red; }
+          border: #ff0a0a; }
   .main-wrapper .toolbar {
     margin: 30px 60px 10px 800px; }
     .main-wrapper .toolbar input {
@@ -72,6 +72,9 @@ body {
       background-color: white;
       padding: 10px;
       margin: 10px 6px; }
+      .main-wrapper .post-list article:hover {
+        box-shadow: 1px 1px 4px 4px #ff1a1a;
+        transition: 1s; }
       .main-wrapper .post-list article img {
         width: 495px; }
       .main-wrapper .post-list article .post-description {
@@ -160,7 +163,7 @@ body {
       color: white;
       background-color: red;
       box-shadow: 2px 2px 12px 8px #ff3333;
-      border: red; }
+      border: #ff0a0a; }
   .main-wrapper #contact .form textarea {
     border: 2px solid #c1bfc6;
     background-color: #efefef;
