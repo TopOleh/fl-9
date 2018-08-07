@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #efefef;
+  width: 1100px; }
+
+.main-wrapper {
+  width: inherit;
+  margin: 0 150px;
+  overflow: hidden; }
+  .main-wrapper header {
+    display: inline-block; }
+    .main-wrapper header .logo {
+      width: 350px;
+      height: 200px;
+      float: left;
+      display: block; }
+      .main-wrapper header .logo img {
+        width: inherit;
+        height: inherit; }
+    .main-wrapper header nav {
+      display: block;
+      margin-top: 115px;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid rgba(16, 16, 16, 0.43);
+      border-bottom: 1px solid rgba(16, 16, 16, 0.43); }
+      .main-wrapper header nav a[role="button"] {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 18px 69px;
+        display: inline-block;
+        font-size: 19pt;
+        color: red; }
+  .main-wrapper .toolbar {
+    margin: 30px 60px 10px 800px; }
+    .main-wrapper .toolbar input {
+      border: 2px solid #c1bfc6;
+      background-color: #efefef;
+      font-family: sans-serif;
+      display: flex;
+      width: 1050px;
+      margin: 10px 0;
+      font-size: 15pt;
+      line-height: 30pt;
+      text-indent: 16pt;
+      color: #ff1a1a;
+      border-color: #ff1a1a;
+      width: 255px; }
+      .main-wrapper .toolbar input::placeholder {
+        color: #ff1a1a; }
+  .main-wrapper .post-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .main-wrapper .post-list article {
+      width: 515px;
+      background-color: white;
+      padding: 10px;
+      margin: 10px 6px; }
+      .main-wrapper .post-list article img {
+        width: 495px; }
+      .main-wrapper .post-list article .post-description {
+        color: #c1bfc6;
+        margin: 10px 0; }
+      .main-wrapper .post-list article h3 {
+        padding: 5px 0 0 0;
+        margin: 10px 0 0 0;
+        border-top: 1px solid rgba(16, 16, 16, 0.43);
+        color: #618bb3;
+        font-size: 17pt;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .main-wrapper .post-list article p {
+        font-family: sans-serif;
+        font-size: 15pt;
+        color: #757575;
+        line-height: 20pt; }
+        .main-wrapper .post-list article p:first-of-type {
+          margin-top: 0; }
+    .main-wrapper .post-list:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .main-wrapper #about h1 {
+    font-family: sans-serif;
+    text-align: right;
+    color: red;
+    text-transform: uppercase;
+    margin: 70px 50px 0 0; }
+  .main-wrapper #about p {
+    width: 1050px;
+    margin: 20px;
+    padding: 0 10px 0 0;
+    font-family: sans-serif;
+    font-size: 15pt;
+    color: #757575;
+    line-height: 20pt; }
+    .main-wrapper #about p:first-of-type {
+      margin-top: 0; }
+  .main-wrapper #about img {
+    width: 1030px;
+    margin: 20px; }
+  .main-wrapper #contact h1 {
+    font-family: sans-serif;
+    text-align: right;
+    color: red;
+    text-transform: uppercase;
+    margin: 70px 50px 0 0; }
+  .main-wrapper #contact h4 {
+    font-family: sans-serif;
+    text-align: right;
+    color: red;
+    text-transform: uppercase;
+    margin: 70px 50px 0 0;
+    margin-top: 0; }
+  .main-wrapper #contact .form input:not(:last-child) {
+    border: 2px solid #c1bfc6;
+    background-color: #efefef;
+    font-family: sans-serif;
+    display: flex;
+    width: 1050px;
+    margin: 10px 0;
+    font-size: 15pt;
+    line-height: 30pt;
+    text-indent: 16pt; }
+  .main-wrapper #contact .form input[type=submit] {
+    width: 200px;
+    height: 50px;
+    margin-left: 850px;
+    background-color: #ff6666;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-weight: bold;
+    border: none; }
+  .main-wrapper #contact .form textarea {
+    border: 2px solid #c1bfc6;
+    background-color: #efefef;
+    font-family: sans-serif;
+    display: flex;
+    width: 1050px;
+    margin: 10px 0;
+    font-size: 15pt;
+    line-height: 30pt;
+    text-indent: 16pt;
+    height: 150px; }
+  .main-wrapper footer span {
+    font-size: 10pt;
+    color: #757575; }
