@@ -33,6 +33,11 @@ body {
         display: inline-block;
         font-size: 19pt;
         color: red; }
+        .main-wrapper header nav a[role="button"]:hover {
+          color: white;
+          background-color: red;
+          box-shadow: 2px 2px 12px 8px #ff3333;
+          border: red; }
   .main-wrapper .toolbar {
     margin: 30px 60px 10px 800px; }
     .main-wrapper .toolbar input {
@@ -48,6 +53,14 @@ body {
       color: #ff1a1a;
       border-color: #ff1a1a;
       width: 255px; }
+      .main-wrapper .toolbar input:hover {
+        background-color: #d6d6d6;
+        outline: 1px solid red;
+        border: 2px solid red; }
+      .main-wrapper .toolbar input:focus {
+        background-color: #c9c9c9;
+        outline: 1px solid red;
+        border: 2px solid red; }
       .main-wrapper .toolbar input::placeholder {
         color: #ff1a1a; }
   .main-wrapper .post-list {
@@ -125,6 +138,14 @@ body {
     font-size: 15pt;
     line-height: 30pt;
     text-indent: 16pt; }
+    .main-wrapper #contact .form input:not(:last-child):hover {
+      background-color: #d6d6d6;
+      outline: 1px solid red;
+      border: 2px solid red; }
+    .main-wrapper #contact .form input:not(:last-child):focus {
+      background-color: #c9c9c9;
+      outline: 1px solid red;
+      border: 2px solid red; }
   .main-wrapper #contact .form input[type=submit] {
     width: 200px;
     height: 50px;
@@ -135,6 +156,11 @@ body {
     font-size: 14pt;
     font-weight: bold;
     border: none; }
+    .main-wrapper #contact .form input[type=submit]:hover {
+      color: white;
+      background-color: red;
+      box-shadow: 2px 2px 12px 8px #ff3333;
+      border: red; }
   .main-wrapper #contact .form textarea {
     border: 2px solid #c1bfc6;
     background-color: #efefef;
@@ -146,6 +172,14 @@ body {
     line-height: 30pt;
     text-indent: 16pt;
     height: 150px; }
+    .main-wrapper #contact .form textarea:hover {
+      background-color: #d6d6d6;
+      outline: 1px solid red;
+      border: 2px solid red; }
+    .main-wrapper #contact .form textarea:focus {
+      background-color: #c9c9c9;
+      outline: 1px solid red;
+      border: 2px solid red; }
   .main-wrapper footer span {
     font-size: 10pt;
     color: #757575; }

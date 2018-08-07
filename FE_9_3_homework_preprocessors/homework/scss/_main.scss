@@ -1,4 +1,4 @@
-//MIXINS
+//*******MIXINS/**********
 @mixin form-size {
   border: 2px solid #c1bfc6;
   background-color: $background-color-body;
@@ -9,6 +9,18 @@
   font-size: 15pt;
   line-height: 30pt;
   text-indent: 16pt;
+
+  &:hover {
+    background-color: darken($background-color-body, 10%);
+    outline: 1px solid $color-general;
+    border: 2px solid $color-general;
+  }
+
+  &:focus {
+    background-color: darken($background-color-body, 15%);
+    outline: 1px solid $color-general;
+    border: 2px solid $color-general;
+  }
 }
 @mixin article-headers {
   font-family: sans-serif;
@@ -27,7 +39,20 @@
     margin-top: 0;
   }
 }
-//GENERAL STYLES
+@mixin button-actions {
+  &:hover {
+    color: white;
+    background-color: $color-general;
+    box-shadow: 2px 2px 12px 8px lighten($color-general, 10%);
+    border: $color-general;
+  }
+
+  &:active {
+
+  }
+}
+//*******\MIXINS**********
+//*******GENERAL STYLES/********
 * {
   box-sizing: border-box;
 }
@@ -36,11 +61,12 @@ body {
   background-color: $background-color-body;
   width: 1100px;
 }
+  //MAIN STYLE
   .main-wrapper {
     width: inherit;
     margin: 0 150px;
     overflow: hidden;
-
+    //*****HEADER******
     header {
       display: inline-block;
 
@@ -55,7 +81,7 @@ body {
           height: inherit;
         }
       }
-
+      //******NAVIGATION*******
       nav {
         display: block;
         margin-top: 115px;
@@ -71,10 +97,12 @@ body {
           display: inline-block;
           font-size: $font-nav;
           color: $color-general-nav;
+
+          @include button-actions;
         }
       }
     }
-
+    //********SEARCH*********
     .toolbar {
       margin: 30px 60px 10px 800px;
 
@@ -89,7 +117,7 @@ body {
         }
       }
     }
-
+    //**********ARTICLES**********
     .post-list {
       display: flex;
       align-items: flex-start;
@@ -126,13 +154,13 @@ body {
       }
 
       &:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+           content: "";
+           display: table;
+           clear: both;
+         }
 
     }
-
+    //********WHO AM I***********
     #about {
 
       h1 {
@@ -151,7 +179,7 @@ body {
         margin: 20px;
       }
     }
-
+    //**********CONTACTS*******FORM********
     #contact {
 
       h1{
@@ -181,6 +209,8 @@ body {
             font-size: 14pt;
             font-weight: bold;
             border: none;
+
+            @include button-actions;
           }
         }
 
@@ -191,7 +221,7 @@ body {
         }
       }
     }
-
+    //********FOOTER**********
     footer {
 
       span {
