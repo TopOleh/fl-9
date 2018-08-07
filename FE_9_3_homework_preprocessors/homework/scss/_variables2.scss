@@ -14,32 +14,3 @@ $border-black-small: 1px solid rgba(16, 16, 16, 0.43);
 $border-nav: $border-black-small;
 
 $margin-10-text: 10px;
-
-@mixin form-size {
-  border: 2px solid #c1bfc6;
-  background-color: $background-color-body;
-  font-family: sans-serif;
-  display: flex;
-  width: 1050px;
-  margin: 10px 0;
-  font-size: 15pt;
-  line-height: 30pt;
-  text-indent: 16pt;
-}
-@mixin article-headers {
-  font-family: sans-serif;
-  text-align: right;
-  color: $color-general;
-  text-transform: uppercase;
-  margin: 70px 50px 0 0;
-}
-@mixin p-edit {
-  font-family: sans-serif;
-  font-size: 15pt;
-  color: $color-p-text;
-  line-height: 20pt;
-
-  &:first-of-type {
-    margin-top: 0;
-  }
-}
