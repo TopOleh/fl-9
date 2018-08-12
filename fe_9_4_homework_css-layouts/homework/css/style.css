@@ -1,0 +1,244 @@
+@media screen and (min-width: 900px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+  body {
+    width: 100%; }
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 740px;
+    background: url("../img/apples.jpg") no-repeat center;
+    background-size: cover; }
+    header nav .nav-wrapper {
+      display: inline-block;
+      width: 100%; }
+      header nav .nav-wrapper a.nav-logo {
+        text-decoration: none;
+        color: #FFF;
+        font-family: "Open-Sans", sans-serif;
+        font-size: 15pt;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        text-transform: uppercase; }
+      header nav .nav-wrapper ul {
+        display: inline-block;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 2%;
+        top: 2%; }
+        header nav .nav-wrapper ul li {
+          list-style: none;
+          float: left; }
+          header nav .nav-wrapper ul li a {
+            text-decoration: none;
+            color: #FFF;
+            font-family: "Open-Sans", sans-serif;
+            font-size: 15pt;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            text-transform: capitalize; }
+    header .head-image-title h1 {
+      font-family: "Open-Sans", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFF;
+      font-size: 48pt;
+      margin-top: 150px;
+      margin-bottom: 0;
+      font-weight: normal;
+      letter-spacing: 10px; }
+      header .head-image-title h1 .sign {
+        font-family: "Open-Sans", sans-serif;
+        font-size: 88pt;
+        font-weight: normal;
+        margin-right: 20px; }
+    header .head-image-title p {
+      font-family: "Open-Sans", sans-serif;
+      text-transform: capitalize;
+      text-align: center;
+      color: #FFF;
+      font-size: 15pt;
+      margin-top: 0;
+      font-weight: normal; }
+      header .head-image-title p .show {
+        background-color: rgba(164, 164, 164, 0.5);
+        color: #FFF;
+        border: 3px solid #FFF;
+        font-size: 20pt;
+        text-transform: capitalize;
+        margin-top: 10%;
+        width: 300px;
+        height: 80px; }
+
+  main .general-info {
+    width: 90%;
+    margin: 10% 5%; }
+    main .general-info .head-general-info {
+      font-family: "Open-Sans", sans-serif;
+      float: left;
+      font-size: 15pt;
+      width: 45%;
+      line-height: 28pt;
+      margin-right: 5%; }
+      main .general-info .head-general-info [class^="head-general-info"] {
+        font-weight: normal; }
+    main .general-info p {
+      font-family: "Open-Sans", sans-serif;
+      font-size: 13pt; }
+  main .featured-articles {
+    background-color: #F3F3F3; }
+    main .featured-articles .featured-header {
+      text-align: center;
+      font-weight: normal;
+      font-size: 20pt;
+      padding: 10% 0 7% 0; }
+    main .featured-articles [class^="photo-article"] {
+      display: inline-block;
+      width: 92%;
+      margin: 1% 4%; }
+      main .featured-articles [class^="photo-article"] .photo-content-description {
+        font-family: "Open-Sans", sans-serif;
+        font-size: 10pt;
+        position: absolute;
+        bottom: 5%;
+        color: #F0F0F0;
+        left: 2%; }
+      main .featured-articles [class^="photo-article"] .photo-content-France {
+        position: relative;
+        width: 60%;
+        height: 300px;
+        background-size: cover;
+        box-shadow: inset 0 0 230px -45px;
+        margin: 1%;
+        background: url("../img/sample.jpg") no-repeat;
+        float: left; }
+      main .featured-articles [class^="photo-article"] .photo-content-America {
+        position: relative;
+        width: 60%;
+        height: 300px;
+        background-size: cover;
+        box-shadow: inset 0 0 230px -45px;
+        margin: 1%;
+        float: right;
+        background: url("../img/sample3.jpg") no-repeat; }
+      main .featured-articles [class^="photo-article"] .photo-content-button {
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        background-color: rgba(164, 164, 164, 0.5);
+        color: #FFF;
+        border: 3px solid #FFF; }
+      main .featured-articles [class^="photo-article"] .article-photo-description {
+        font-family: "Open-Sans", sans-serif;
+        text-align: center;
+        margin-top: 7%; }
+    main .featured-articles .subscribe-newsletter {
+      width: 92%;
+      margin: 4%;
+      background: #FFF;
+      display: inline-block;
+      line-height: 215%; }
+      main .featured-articles .subscribe-newsletter .subscribe-form {
+        display: flex; }
+        main .featured-articles .subscribe-newsletter .subscribe-form .subscribe-email {
+          font-family: "Open-Sans", sans-serif;
+          text-indent: 4%;
+          color: #000;
+          border: 1px solid;
+          width: 70%;
+          font-size: 8pt;
+          background: #F3F3F3; }
+          main .featured-articles .subscribe-newsletter .subscribe-form .subscribe-email::placeholder {
+            color: #000; }
+        main .featured-articles .subscribe-newsletter .subscribe-form .subscribe-submit {
+          font-family: "Open-Sans", sans-serif;
+          color: #FFF;
+          background-color: #343638;
+          border: 1px solid #343639;
+          font-size: 8pt; }
+      main .featured-articles .subscribe-newsletter .subscribe-head {
+        font-family: "Open-Sans", sans-serif;
+        display: block;
+        float: left;
+        margin: 4%;
+        width: 30%; }
+      main .featured-articles .subscribe-newsletter .subscribe-form {
+        margin: 4%;
+        width: 62%; }
+        main .featured-articles .subscribe-newsletter .subscribe-form .subscribe-email {
+          line-height: 27pt; }
+        main .featured-articles .subscribe-newsletter .subscribe-form .subscribe-submit {
+          width: 20%; }
+  main .about-info {
+    width: 92%;
+    display: inline-flex;
+    margin: 8% 4%;
+    font-size: 9pt;
+    font-family: "Open-Sans", sans-serif;
+    line-height: 13pt; }
+    main .about-info .foot-info {
+      width: 23%;
+      margin: 0 1%; }
+      main .about-info .foot-info :not(h2) {
+        color: #c1c5ca; }
+      main .about-info .foot-info h2 {
+        margin-bottom: 4%; }
+      main .about-info .foot-info.last-tweet :not(h2) {
+        font-style: italic; }
+      main .about-info .foot-info.last-tweet .time-tweet {
+        padding-top: 6px;
+        color: #eaeced; }
+      main .about-info .foot-info.newsletter .subscribe-form {
+        display: flex; }
+        main .about-info .foot-info.newsletter .subscribe-form .subscribe-email {
+          font-family: "Open-Sans", sans-serif;
+          text-indent: 4%;
+          color: #000;
+          border: 1px solid;
+          width: 70%;
+          font-size: 8pt;
+          background: #F3F3F3; }
+          main .about-info .foot-info.newsletter .subscribe-form .subscribe-email::placeholder {
+            color: #000; }
+        main .about-info .foot-info.newsletter .subscribe-form .subscribe-submit {
+          font-family: "Open-Sans", sans-serif;
+          color: #FFF;
+          background-color: #343638;
+          border: 1px solid #343639;
+          font-size: 8pt; }
+      main .about-info .foot-info.newsletter .subscribe-form {
+        margin-top: 1%; }
+        main .about-info .foot-info.newsletter .subscribe-form .subscribe-email {
+          line-height: 21pt; }
+
+  footer {
+    font-family: "Open-Sans", sans-serif;
+    display: inline-flex;
+    position: relative;
+    width: 94%;
+    margin: 1% 3%;
+    padding-top: 1%;
+    border-top: 1px solid #dcdfe2;
+    font-size: 11pt; }
+    footer .maintain {
+      color: #c1c5ca; }
+    footer .foot-nav-wrapper nav ul {
+      list-style: none;
+      display: inline-flex;
+      position: absolute;
+      bottom: 2%;
+      right: 0; }
+      footer .foot-nav-wrapper nav ul li {
+        padding: 0 5px; }
+        footer .foot-nav-wrapper nav ul li a {
+          color: #000;
+          text-decoration: none; } }
