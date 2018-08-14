@@ -1,0 +1,215 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/*:root {*/
+  /*--bg-color--dark: #0a1223;*/
+  /*--bg-color--light: #fff;*/
+  /*--link: #5d5d5d;*/
+  /*--link--active: #54597d;*/
+  /*--link--hover: #54597d;*/
+  /*--article-title: #ddd;*/
+  /*--article-title--dark: #000;*/
+  /*--thumbnail--description: #5d5d5d;*/
+
+  /*!* These styles are needed only for media query max-width: 575px *!*/
+
+  /*!* The 'Up' button (circle button at right bottom corner) *!*/
+  /*--btn-color: #fff;*/
+  /*--btn-bg-color: #5ebcff;*/
+
+  /*--navigation-border-bottom: #ddd;*/
+  /*--thumbnail-title: #484747;*/
+/*}*/
+/* Your styles go here */
+@media all {
+  * {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body .main-wrapper { height: 100%;}
+
+  body { overflow-x: hidden; }
+
+  a { text-decoration: none; }
+
+  li { list-style: none;}
+
+  header .nav-toolbar .nav-list .nav-link a{
+    color: #5d5d5d;
+  }
+
+  header .nav-toolbar .nav-list .nav-link a:hover {
+    color: #54597d;
+  }
+
+  header .nav-toolbar .nav-list .nav-link.active a {
+    color: #54597d;
+  }
+
+  main .main-article .article-picture img {
+    width: 50vw;
+    height: 25vw;
+  }
+
+  main .main-title {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    margin: 9% 1%;
+    flex-flow: wrap;
+  }
+
+  main .main-title i {
+    margin: 0 1%;
+  }
+
+  main .main-article .article-context .article-description {
+    color: #5d5d5d;
+    text-indent: 5%;
+  }
+
+  @media screen and (min-width: 576px) {
+    .main-wrapper {
+      background: #0a1223;
+      width: 100%;
+    }
+
+    header .nav-toolbar .nav-list {
+      display: flex;
+
+      flex-flow: row wrap;
+    }
+
+    main .main-title {
+      color: #ddd;
+      font-size: 5vw;
+    }
+
+    main .main-article .article-context .article-title {
+      background: -webkit-linear-gradient(0deg, #ddd, #000 32%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+    main #sticky-button-up {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+
+    header .nav-toolbar .nav-list {
+      justify-content: flex-end;
+      padding: 1%;
+    }
+
+    header .nav-toolbar .nav-list .nav-link a{
+      padding: 10px;
+      margin: 10px;
+    }
+
+    main .main-article {
+      display: flex;
+      justify-content: center;
+      margin: 3% 7%;
+    }
+
+    main .main-article:nth-of-type(odd) {
+      flex-flow: row nowrap;
+    }
+
+    main .main-article:nth-of-type(even) {
+      flex-flow: row-reverse nowrap;
+    }
+    main .main-article .article-context .article-title {
+      background:
+          -webkit-linear-gradient(0deg, #ddd, #000 115%);
+      -webkit-background-clip: text;
+      font-size: 2.5vw;
+      padding: 5% 0 10% 0;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px){
+
+    header .nav-toolbar .nav-list { justify-content: center;}
+
+    header .nav-toolbar .nav-list .nav-link { padding: 20px;}
+
+    main .main-article {
+      margin: 10% 15%
+    }
+
+    main .main-article .article-context .article-title {
+      background:
+          -webkit-linear-gradient(0deg, #ddd, #000 100%);
+      margin: 5% 0;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    main .main-article .article-picture {
+      text-align: center;
+      margin: 5% 0;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+
+    .main-wrapper {
+      background: #fff;
+    }
+
+    header .nav-toolbar .nav-list {
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 1 100%;
+    }
+
+    header .nav-toolbar .nav-list .nav-link.active a {
+      color: #54597d;
+      font-weight: bold;
+    }
+
+    header .nav-toolbar .nav-list .nav-link {
+      border-bottom: 1px solid #ddd;
+      line-height: 22pt;
+      text-indent: 4pt;
+    }
+
+    main .main-title {
+      color: #000;
+    }
+
+    main .main-article {
+      margin: 10% 15%;
+      font-size: 15pt;
+    }
+
+    main .main-article .article-context .article-title {
+      color: #484747;
+      margin: 5% 0;
+    }
+
+    main .main-article .article-picture {
+      text-align: center;
+      margin: 5% 0;
+    }
+
+    main #sticky-button-up {
+      position: sticky;
+      bottom: 20px;
+      left: 80%;
+      background-color: #5ebcff;
+      color: #fff;
+      border-radius: 100%;
+      padding: 8px;
+      z-index: 1;
+      box-shadow: 6px 9px 24px -10px black;
+    }
+  }
+}
