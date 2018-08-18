@@ -28,8 +28,8 @@ function guessingGame() {
         return false;
       }
   for (;attempts > 0; ) {
-    userNumb = prompt(`Enter a number from ${min} to ${max} \nAttempts left: ${attempts} // get any user input
-Total price: ${price}$ \nPossible price on current attempt: ${attemptPrice}$`);
+    userNumb = prompt(`Enter a number from ${min} to ${max} \nAttempts left: ${attempts}  
+Total price: ${price}$ \nPossible price on current attempt: ${attemptPrice}$`);// get any user input
 
     if (userNumb === null) {
       return false;
