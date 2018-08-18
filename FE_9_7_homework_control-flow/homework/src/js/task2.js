@@ -25,13 +25,14 @@ function guessingGame() {
       };
 
       if (exit) { // exit from the function
+        alert(`Thank you for a game. Your prize is: ${price}`);
         return false;
       }
   for (;attempts > 0; ) {
     userNumb = prompt(`Enter a number from ${min} to ${max} \nAttempts left: ${attempts}  
 Total price: ${price}$ \nPossible price on current attempt: ${attemptPrice}$`);// get any user input
 
-    if (userNumb === null) {
+    if (userNumb === null || userNumb === ``) {
       return false;
     } else {
       userNumb = parseInt(userNumb.match(/\d+/g)[0]); // get a digit from string and parse it into int
