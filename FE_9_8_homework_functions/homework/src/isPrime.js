@@ -4,4 +4,3 @@ function isPrime(num) {
   return num === defPrimeTwo || num === defPrimeThree ? true
   : !(num < defPrimeTwo || num % defPrimeTwo === 0 || num % defPrimeThree === 0);
 }
-isPrime();
