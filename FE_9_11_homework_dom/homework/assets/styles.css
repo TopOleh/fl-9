@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button.material-icons {
+  background: inherit;
+  border: 0;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+#root .container {
+  font-family: sans-serif;
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  position: relative;
+  flex-flow: column;
+}
+#root .container header {
+  position: absolute;
+  margin: 6%;
+  width: 88%;
+}
+#root .container header h1{
+  font-weight: normal;
+  text-align: center;
+}
+#root .container header .material-icons {
+  line-height: 0.7;
+  font-size: 40px;
+}
+#root .container header input[type="text"] {
+  width: 85%;
+  height: 30px;
+  margin-right: 2%;
+  float: left;
+}
+#root .container main {
+  overflow: auto;
+  width: 88%;
+  position: relative;
+  top: 20%;
+  left: 5%;
+  height: 60%;
+  border-top: 2px solid black;
+  padding: 10px;
+}
+#root .container main ul li{
+  list-style: none;
+}
+#root .container footer {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+#root .container footer a img {
+  width: 100px;
+  height: 100px;
+}
