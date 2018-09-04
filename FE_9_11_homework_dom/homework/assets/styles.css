@@ -34,24 +34,41 @@ button.material-icons {
   line-height: 0.7;
   font-size: 40px;
 }
+#root .container header p {
+  color: red;
+  text-align: center;
+}
 #root .container header input[type="text"] {
   width: 85%;
   height: 30px;
   margin-right: 2%;
   float: left;
+  padding: 1%;
 }
 #root .container main {
   overflow: auto;
   width: 88%;
   position: relative;
+  margin: 1%;
   top: 20%;
   left: 5%;
   height: 60%;
   border-top: 2px solid black;
   padding: 10px;
 }
-#root .container main ul li{
+#root .container main ul li {
   list-style: none;
+  display: flex;
+  font-size: 20pt;
+  margin: 1%;
+  position: relative;
+}
+#root .container main ul li .delete {
+  position: absolute;
+  right: 0;
+}
+#root .container main ul li .material-icons {
+  font-size: 24pt;
 }
 #root .container footer {
   position: absolute;
