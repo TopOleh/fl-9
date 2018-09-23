@@ -1,2 +1,37 @@
 @import "_variables";
-@import "_module";
+.text-primary{
+  color: @blue !important;;
+}
+.border-primary{
+  border-color: @blue !important;
+}
+
+.bg-primary{
+  background: @blue !important;
+}
+.bg-orange {
+  background: @orange;
+}
+.bg-green{
+  background: @green;
+}
+.bg-red {
+  background: @red;
+}
+.bg-blue {
+  background: @blue;
+}
+.bg-grey {
+  background: @grey;
+}
+
+.nav-item {
+
+  &.is-active {
+    background: @blue !important;
+
+    > .nav-link {
+      color: white !important;
+    }
+  }
+}
