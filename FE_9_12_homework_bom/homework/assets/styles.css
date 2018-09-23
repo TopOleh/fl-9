@@ -1,8 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 #add-new-task {
-  display: none;
-}
+  display: none; }
 
 #add-item {
-  width: 30%;
-}
+  width: 30%; }
 
+#root {
+  height: 100vh;
+  background-color: cadetblue;
+  display: grid;
+  justify-content: center; }
+  #root header {
+    background-color: darkcyan;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px; }
+    #root header .header-title {
+      padding: 10px 0;
+      margin: 30px 30px; }
+  #root main #list {
+    display: grid;
+    grid-template-columns: 1fr; }
+    #root main #list #add-button {
+      justify-self: end;
+      border-radius: 50%;
+      width: 90px;
+      background: goldenrod;
+      height: 40px; }

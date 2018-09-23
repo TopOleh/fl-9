@@ -32,14 +32,14 @@ const checkUlLi = (event) => { // Check for input
 
 const maxListLength = 10;
 
-  const addNewAction = () => { // Adding a new list action
+const addNewAction = () => { // Adding a new list action
   const li = document.createElement('li');
   const checkActionIcon = document.createElement('button');
   const deleteActionIcon = document.createElement('button');
   const textActionLabel = document.createElement('label');
 
   li.setAttribute('class', addNewTextInput.value); //Set a class name same as inputted text
-  deleteActionIcon.setAttribute('class', addNewTextInput.value);//Set the same name for children
+  deleteActionIcon.setAttribute('class', addNewTextInput.value);//Set the same name for li children
   checkActionIcon.setAttribute('class', addNewTextInput.value);
   textActionLabel.setAttribute('class', addNewTextInput.value);
 

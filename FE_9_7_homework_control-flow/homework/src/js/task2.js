@@ -8,23 +8,27 @@ function randomNumb(max) {
 }
 
 function guessingGame() {
-  let min = 0,
-      max = 5,
-      compNumb = randomNumb(max),
-      userNumb,
-      attempts = 3,
-      lastAttempt = 1,
-      price = 0, // start user price
-      basicPrice = 10, // start win price
-      attemptPrice = 10, // price that user can win now
-      gameMultiply = 1,
-      exit = false,
-      endGame = function() {
-        alert(`Thank you for a game. Your prize is: ${price}`);
-        confirm(`Do you want to play again?`) ? guessingGame() : exit = true; // if true start new game else exit
-      };
+  let min = 0;
+  let max = 5;
+  let compNumb = randomNumb(max);
+  let userNumb;
+  let attempts = 3;
+  let lastAttempt = 1;
+  let price = 0;
+// start user price
+  let basicPrice = 10;
+// start win price
+  let attemptPrice = 10;
+// price that user can win now
+  let gameMultiply = 1;
+  let exit = false;
+  let endGame = function () {
+    alert(`Thank you for a game. Your prize is: ${price}`);
+    confirm(`Do you want to play again?`) ? guessingGame() : exit = true; // if true start new game else exit
+  };
 
-      if (exit) { // exit from the function
+
+  if (exit) { // exit from the function
         alert(`Thank you for a game. Your prize is: ${price}`);
         return false;
       }

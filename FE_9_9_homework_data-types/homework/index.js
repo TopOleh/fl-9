@@ -7,7 +7,6 @@ function forEach(arr, func) {
     func(elem);
   }
 }
-
 function map (arr, func) {
   let mappedArr = [];
   forEach( arr, elem => mappedArr.push(func(elem)));
