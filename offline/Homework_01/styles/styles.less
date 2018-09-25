@@ -1,7 +1,9 @@
 @import "_variables";
+
 .text-primary{
   color: @blue !important;;
 }
+
 .border-primary{
   border-color: @blue !important;
 }
@@ -9,23 +11,34 @@
 .bg-primary{
   background: @blue !important;
 }
+
 .bg-orange {
   background: @orange;
 }
+
 .bg-green{
   background: @green;
 }
+
 .bg-red {
   background: @red;
 }
+
 .bg-blue {
   background: @blue;
 }
+
 .bg-grey {
   background: @grey;
 }
 
 .nav-item {
+
+  &:hover {
+    background: aquamarine;
+    transform: translateX(10px) translateY(10px);
+    transition: 2s;
+  }
 
   &.is-active {
     background: @blue !important;
