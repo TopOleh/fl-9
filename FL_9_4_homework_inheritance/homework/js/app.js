@@ -1,28 +1,28 @@
 //Task 1
-// function assign(obj, def) {
-//   obj = def;
-//   for (let index = 2; index < arguments.length; index++) {
-//     let arg = arguments[index];
-//     let arrOfkeys = Object.getOwnPropertyNames(arg);
-//     let argLength = arrOfkeys.length;
-//     for (let elem = 0; elem < argLength; elem++) {
-//       let currentElem = arrOfkeys[elem];
-//       if (obj.hasOwnProperty(currentElem)) {
-//          obj[currentElem] = arg[currentElem];
-//       } else {
-//         obj[currentElem] = arg[currentElem];
-//       }
-//     }
-//   }
-//   return console.log(obj);
-// }
-// const defaults = { a: 123, b: 777 };
-// const options = { a: 456 };
-// const options1 = { b: 56 };
-// const options2 = { c: 76 };
-// const options3 = { a: 111, b: 222 , c: 333, d : 444 };
-// const configs = assign({}, defaults, options, options1, options2, options3); // {a: 456, b: 777}
-// console.log(configs);
+function assign(obj, def) {
+  obj = def;
+  for (let index = 2; index < arguments.length; index++) {
+    let arg = arguments[index];
+    let arrOfkeys = Object.getOwnPropertyNames(arg);
+    let argLength = arrOfkeys.length;
+    for (let elem = 0; elem < argLength; elem++) {
+      let currentElem = arrOfkeys[elem];
+      if (obj.hasOwnProperty(currentElem)) {
+         obj[currentElem] = arg[currentElem];
+      } else {
+        obj[currentElem] = arg[currentElem];
+      }
+    }
+  }
+  return console.log(obj);
+}
+const defaults = { a: 123, b: 777 };
+const options = { a: 456 };
+const options1 = { b: 56 };
+const options2 = { c: 76 };
+const options3 = { a: 111, b: 222 , c: 333, d : 444 };
+const configs = assign({}, defaults, options, options1, options2, options3); // {a: 456, b: 777}
+console.log(configs);
 
 //Task 2
 function Bot({
