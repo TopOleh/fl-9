@@ -1,4 +1,4 @@
-function victimDataSource(name) {
+const victimDataSource = name => {
   const victimsByName = {
     'John': {
       name: 'John',
@@ -32,7 +32,7 @@ function victimDataSource(name) {
   });
 }
 
-function crimeDataSource(surname) {
+const crimeDataSource = surname => {
   return new Promise((resolve, reject) => {
     const crimeBySurname = {
       'Doe': {
@@ -55,24 +55,10 @@ function crimeDataSource(surname) {
   });
 }
 
-function loadVictimData(name) {
+const loadVictimData = name => {
   try {
     return victimDataSource(name);
   } catch (e) {
     console.log(e);
   }
 }
-
-/**
- * Output: John Doe(Victim, 99) suffered from dank memes in 9 gag.
- */
-loadVictimData('John');
-/**
- * Output: Jennifer Nicker(Artist, 21) suffered from robbery in NYC.
- */
-loadVictimData('Jennifer');
-/**
- * Output: Unhandled Promise rejection: unknown victim
- * or familiar error msg
- */
-loadVictimData('Jss');
